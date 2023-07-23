@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="first-half-h1">
+        Generate a 
+        <div class="sec-half-h1"> 
+            random password
+        </div>
+    </h1>
+
+    <p class="text">
+        Never Use an insecure password
+    </p>
+<div class="settings">        
+        <label for="length" class="inp text">Password Length:</label>
+        <input id="length" type="number" min="8" max="20" value="8" class="inp" placeholder="Enter password length">
+        
+        <label for="NumSyms" class="inp text"> Include Numbers:</label>
+        <input type="checkbox" id="NumSyms" checked>
+ 
+</div>
+    <button class="btn" id="btn" onclick="setPassword()">
+        Generate Password
+    </button>
+
+    <div class="passwords">
+        <div class="password" id="password1">
+             
+        </div>
+        <button class="btn-mini" onclick="copy(1)">
+            📋
+        </button>
+        <div class="password" id="password2">
+            
+        </div>
+        <button class="btn-mini" onclick="copy2()">
+            📋
+        </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
